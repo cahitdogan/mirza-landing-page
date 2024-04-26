@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+:root {
+    --text-fontsize-h1: 4.8rem;
+    --text-fontsize-h2: 3.6rem;
+    --text-fontsize-h3: 2.4rem;
+    --text-fontsize-2x: 2rem;
+    --text-fontsize-1x: 1.6rem;
+
+    --color-surface-primary: #0F0D13;
+    --color-surface-secondary: #1D1B20;
+    --color-surface-tertiary: #D0BCFF;
+    --color-surface-quaternary: #36343B;
+
+    --color-text-primary: #E6E0E9;
+    --color-text-secondary: #381E72;
+    --color-text-tertiary: #EFB8C8;
+
+    --color-border: #938F99;
+}
+
+@media (min-width: 600.02px) {
+
+:root {
+        --text-fontsize-h1: 6.4rem;
+        --text-fontsize-h2: 4.8rem;
+        --text-fontsize-h3: 3.2rem;
+        --text-fontsize-2x: 2rem;
+        --text-fontsize-1x: 1.6rem;
+}
+    }   
+
+/****************************************************************************************************/
+
+html {
+    font-size: 62.5%; /* for 1rem=10px */
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background:
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 70rem/152rem 162rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 220rem/152rem 162rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 370rem/152rem 322rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 640rem/152rem 102rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 700rem/152rem 132rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 795rem/152rem 192rem no-repeat,
+        linear-gradient(rgba(57,30,114,0.52157) 1px, transparent 1px) center 10rem/8rem 8rem, linear-gradient(to right, rgba(57,30,114,0.52157) 1px, #0F0D13 1px) center 10rem/8rem 8rem #0F0D13;
+    background:
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 70rem/152rem 162rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 220rem/152rem 162rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 370rem/152rem 322rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 640rem/152rem 102rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 700rem/152rem 132rem no-repeat,
+        radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.27) 0%, rgba(103, 80, 164, 0.00) 100%) center 795rem/152rem 192rem no-repeat,
+        linear-gradient(rgba(57,30,114,0.52157) 1px, transparent 1px) center 10rem/8rem 8rem, linear-gradient(to right, rgba(57,30,114,0.52157) 1px, #0F0D13 1px) center 10rem/8rem 8rem var(--color-surface-primary);
+}
+
+@media (min-width: 600.02px) {
+
+body {
+        background:
+            radial-gradient(50% 50% at 50% 50%, rgba(212, 148, 166, 0.41) 0%, rgba(56, 30, 114, 0.41) 58.33%, rgba(103, 80, 164, 0.00) 100%) center -17rem/105rem 105rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 80rem/112rem 152rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 205rem/122rem 202rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 358rem/122rem 332rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 655rem/102rem 82rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 710rem/132rem 115rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 800rem/112rem 165rem no-repeat,
+            linear-gradient(rgba(57,30,114,0.52157) 1px, transparent 1px) center 10rem/8rem 8rem, linear-gradient(to right, rgba(57,30,114,0.52157) 1px, #0F0D13 1px) center 10rem/8rem 8rem #0F0D13;
+        background:
+            radial-gradient(50% 50% at 50% 50%, rgba(212, 148, 166, 0.41) 0%, rgba(56, 30, 114, 0.41) 58.33%, rgba(103, 80, 164, 0.00) 100%) center -17rem/105rem 105rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 80rem/112rem 152rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 205rem/122rem 202rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 358rem/122rem 332rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 655rem/102rem 82rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 710rem/132rem 115rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 800rem/112rem 165rem no-repeat,
+            linear-gradient(rgba(57,30,114,0.52157) 1px, transparent 1px) center 10rem/8rem 8rem, linear-gradient(to right, rgba(57,30,114,0.52157) 1px, #0F0D13 1px) center 10rem/8rem 8rem var(--color-surface-primary);
+}
+    }
+
+@media (min-width: 992.02px) {
+
+body {
+        background:
+            radial-gradient(50% 50% at 50% 50%, rgba(212, 148, 166, 0.41) 0%, rgba(56, 30, 114, 0.41) 58.33%, rgba(103, 80, 164, 0.00) 100%) center -25rem/110rem 110rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 65rem/132rem 112rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 155rem/132rem 72rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 208rem/182rem 132rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 317rem/102rem 102rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 375rem/192rem 112rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 457rem/172rem 112rem no-repeat,
+            linear-gradient(rgba(57,30,114,0.52157) 1px, transparent 1px) center 10rem/8rem 8rem, linear-gradient(to right, rgba(57,30,114,0.52157) 1px, #0F0D13 1px) center 10rem/8rem 8rem #0F0D13;
+        background:
+            radial-gradient(50% 50% at 50% 50%, rgba(212, 148, 166, 0.41) 0%, rgba(56, 30, 114, 0.41) 58.33%, rgba(103, 80, 164, 0.00) 100%) center -25rem/110rem 110rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 65rem/132rem 112rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 155rem/132rem 72rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 208rem/182rem 132rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 317rem/102rem 102rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 375rem/192rem 112rem no-repeat,
+            radial-gradient(50% 50% at 50% 50%, rgba(103, 80, 164, 0.29) 0%, rgba(103, 80, 164, 0.00) 100%) center 457rem/172rem 112rem no-repeat,
+            linear-gradient(rgba(57,30,114,0.52157) 1px, transparent 1px) center 10rem/8rem 8rem, linear-gradient(to right, rgba(57,30,114,0.52157) 1px, #0F0D13 1px) center 10rem/8rem 8rem var(--color-surface-primary);
+}
+    }
+
+body #gradient {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 71rem;
+        height: 71rem;
+        overflow: clip;
+    }
+
+@media (min-width: 600.02px) {
+
+body #gradient {
+            display: none;
+    }
+        }
+
+body #gradient::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+
+            width: 142rem;
+            height: 142rem;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(239, 184, 200, 0.36) 0%, rgba(56, 30, 114, 0.33) 64.06%, rgba(103, 80, 164, 0.00) 100%) center/100% no-repeat;
+        }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+input {
+    background-repeat: no-repeat;
+    outline: none;
+    font-size: 1.6rem;
+    color: black;
+    border: none;
+    background-color: transparent;
+}
+
+input::-moz-placeholder {
+    color: rgb(63, 63, 63);
+}
+
+input::placeholder {
+    color: rgb(63, 63, 63);
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+.icon {
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-button {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-icon-button { /*bunun box-sizing: property'sini değiştirmeyi düşün*/
+    display: flex; /*bu class'a dahil elementlerin görünürlüğünü değiştirmek için display: none; gibi çözümler kullanırsan bu property bozulacaktır.*/
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.hide-element {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; 
+}
+
+/****************************************************************************************************/
